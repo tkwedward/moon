@@ -1,0 +1,22 @@
+{
+    "allCharacters":[
+        {
+          "name":"Red Hat",
+          "hp": 100,
+          "mp": 200,
+          "cardBank": [
+              "Attack", "Attack", "Attack"
+          ],
+          "blessing": []
+        },
+        {
+          "name":"Guard",
+          "image":30,
+          "hp": 10,
+          "mp": 20,
+          "cardBank": [
+              "Attack", "Attack", "Attack"
+          ]
+        }
+    ]
+}

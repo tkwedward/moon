@@ -1,0 +1,25 @@
+.battleInterface{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+
+    .enemyImage{
+        display: block;
+        margin: 50px auto;
+        height: 300px;
+    }
+}
+
+.card{
+    padding: 5px;
+}
+
+.redHatSide > .hand > .card{
+    background: blue;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card:hover {
+    outline: 2px solid red;
+
+}

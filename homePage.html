@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/homePage.css">
+        <link rel="stylesheet" href="css/card.css">
+        <!-- <link rel="stylesheet" href="{% static 'equationList/css/pdfEditor/pdfEditor.css' %}"> -->
+    </head>
+    <body>
+
+
+        <div class="mainRoad">
+            <nav>
+                <span>money: </span>
+                <span>chapter: <span>
+                <span>page Left: <span>
+            </nav>
+
+            <div class="choicesArray">
+                <div class="choices choice1">
+                </div>
+
+                <div class="choices choice2">
+                </div>
+                <div class="choices choice3">
+
+                </div>
+            </div>
+
+            <footer>
+                <div class="footerWrapper">
+                    <div class="skill"> skill </div>
+                    <div class="card"> card </div>
+                    <div class="shop"> shop </div>
+                    <div class="characterData">
+                        <div>
+                            hp: <span class="hp"></span>
+                        </div>
+                        <div>
+                            exp: <span class="exp"></span>
+                        </div>
+                    </div>
+                    <div class="characterData">
+                        action: <span class="action"></span>
+                        basicMP: <span class="basicMP"></span>
+                        cardDraw: <span class="cardDraw"></span>
+                    </div>
+                </div>
+
+            </footer>
+        </div>  <!-- main Road -->
+
+        <div class="battleInterface">
+            <div class="enemySide">
+                <img class="enemyImage"></img>
+                <div class="hand"></div>
+                <div class="status">
+                    <span class="name"></span>
+                    <div class="hpBar">
+                        <span class="hpLeft"></span>
+                        <span class="hpValue"></span>
+                    </div>
+                    <div class="mpBar">
+                        <span class="mpLeft"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="redHatSide">
+                <div class="hand"></div>
+                <div class="status">
+                    <span class="name"></span>
+                    <div class="hpBar">
+                        <span class="hpLeft"></span>
+                        <span class="hpValue"></span>
+                    </div>
+                    <div class="mpBar">
+                        <span class="mpLeft"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>  <!-- battleInterface -->
+
+
+
+    </body>
+    <script>
+        let data = {
+            "allCharacters":[
+                {
+                  "name":"Red Hat",
+                  "hp": 100,
+                  "mp": 200,
+                  "cardBank": [
+                      "Attack", "Attack", "Attack"
+                  ]
+                },
+                {
+                  "name":"Guard",
+                  "image":30,
+                  "hp": 10,
+                  "mp": 20,
+                  "cardBank": [
+                      "Attack", "Attack", "Attack"
+                  ]
+                }
+            ]
+        }
+
+    </script>
+
+    <script src="data/cardData.js" charset="utf-8"></script>
+    <script src="js/characters.js" charset="utf-8"></script>
+    <script src="js/card.js" charset="utf-8"></script>
+    <script src="js/event.js" charset="utf-8"></script>
+    <script src="js/battle.js" charset="utf-8"></script>
+
+    <script src="js/homePage.js" charset="utf-8"></script>
+</html>
